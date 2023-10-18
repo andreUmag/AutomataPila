@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Automata</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/body.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/menu.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/slider.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='assets/aire.ico') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#" class="logo"><p>Automata</p><p class="pila">pila</p></a>
+        <div class="nav-links">
+            <ul>
+                <li><a href="#">Historial</a></li>
+                <li><a href="#">Idiomas</a></li>
+            </ul>
+        </div>
+        <img src="{{ url_for('static', filename='assets/bx-menu.svg') }}" alt="menu hamburger" class="menu-hamburger">
+    </nav>
+    <header>
+        <div class="content">
+            <div class="ouput-values">
+                <div class="pila-view">
+                    <div class="pilita">
+                        <img src="{{ url_for('static', filename='assets/pilas.png') }}">
+                    </div>
+                    <div class="slider">
+                        <div class="range">
+                            <div class="sliderValue">
+                              <span>5</span>
+                            </div>
+                            <div class="field">
+                                <div class="value left">0.25</div>
+                                <input
+                                type="range"
+                                min="1"
+                                max="5"
+                                value="3"
+                                steps="1"
+                                id="inputSlider"
+                                />
+                                <div class="value right">2.0</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="graf">
+                    <!-- <h3>AQUI VA EL GRAFO</h3> -->
+                </div>
+            </div>
+            <div class="input-values">
+                <!-- <h3>AQUI VA LA ENTRADA DE PALABRAS</h3> -->
+            </div>
+        </div>
+    </header>
+</body>
+<script src="{{ url_for('static', filename='scripts/menu.js') }}"></script>
+</html>
