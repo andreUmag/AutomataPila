@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='styles/body.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='styles/menu.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='styles/slider.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/input.css') }}">
     <link rel="icon" href="{{ url_for('static', filename='assets/aire.ico') }}">
 </head>
 <body>
@@ -23,7 +24,7 @@
             <div class="ouput-values">
                 <div class="pila-view">
                     <div class="pilita">
-                        <img src="{{ url_for('static', filename='assets/pilas.png') }}">
+                        
                     </div>
                     <div class="slider">
                         <div class="range">
@@ -50,7 +51,10 @@
                 </div>
             </div>
             <div class="input-values">
-                <!-- <h3>AQUI VA LA ENTRADA DE PALABRAS</h3> -->
+                <div class="input-field">
+                    <input type="text" id="input-word" required />
+                    <label data-translate="palabra">Validar</label>
+                </div>
             </div>
         </div>
     </header>
