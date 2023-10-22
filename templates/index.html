@@ -17,7 +17,16 @@
         <div class="nav-links">
             <ul>
                 <li id="history"><a href="#">History</a></li>
-                <li id="languages"><a href="#">Languages</a></li>              
+                <li id="languages" class="dropdown">
+                    <a href="#">Languages</a>
+                    <div id="language-dropdown" class="language-dropdown">
+                        <ul class="language-list">
+                            <li><a href="#" data-lang="en">English</a></li>
+                            <li><a href="#" data-lang="es">Spanish</a></li>
+                            <li><a href="#" data-lang="jp">Japanese</a></li>
+                        </ul>
+                    </div>
+                </li>                        
             </ul>
         </div>
         <img src="{{ url_for('static', filename='assets/bx-menu.svg') }}" alt="menu hamburger" class="menu-hamburger">

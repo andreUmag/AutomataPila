@@ -53,6 +53,40 @@
     right: 30px;
 }
 
+.language-dropdown {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    max-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    right: 0;
+}
+
+.language-dropdown ul {
+    flex-direction: column;
+}
+
+.language-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.language-list li {
+    padding: 10px;
+    text-align: center;
+}
+
+.language-list li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+}
+
+.dropdown:hover .language-dropdown {
+    display: block;
+}
+
 /* @media screen and (max-width: 900px) {
     .navbar{
         padding: 0;

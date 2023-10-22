@@ -3,6 +3,11 @@
     "word": "Validate",
     "history": "History",
     "languages": "Languages",
+    "languages-option": {
+        "en": "English",
+        "es": "Spanish",
+        "jp": "Japanese"
+    },
     "automaton": "Automaton",
     "pushdown": "pushdown"
 }
